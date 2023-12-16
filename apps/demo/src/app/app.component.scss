@@ -1,0 +1,21 @@
+.twscreentest {
+    background-color: red;
+    font-size:20px;
+
+    @screen sm {
+      background-color: blue;
+      font-size:40px;
+    }
+
+    @screen custom {
+      background-color: green;
+      font-size:50px;
+    }
+
+    @screen md {
+      background-color: yellow;
+      font-size:60px;
+    }
+
+
+  }
