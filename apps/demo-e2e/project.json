@@ -22,10 +22,7 @@
     },
     "lint": {
       "executor": "@nx/eslint:lint",
-      "outputs": ["{options.outputFile}"],
-      "options": {
-        "lintFilePatterns": ["apps/demo-e2e/**/*.{js,ts}"]
-      }
+      "outputs": ["{options.outputFile}"]
     },
     "start-dev-server//demo-e2e:start-dev-server": {
       "command": "npx nx run demo:serve:development"

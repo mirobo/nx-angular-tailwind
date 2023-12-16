@@ -31,14 +31,7 @@
     },
     "lint": {
       "executor": "@nx/eslint:lint",
-      "outputs": ["{options.outputFile}"],
-      "options": {
-        "lintFilePatterns": [
-          "libs/lib-overload/lib09/**/*.ts",
-          "libs/lib-overload/lib09/**/*.html",
-          "libs/lib-overload/lib09/package.json"
-        ]
-      }
+      "outputs": ["{options.outputFile}"]
     }
   }
 }

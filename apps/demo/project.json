@@ -6,7 +6,6 @@
   "sourceRoot": "apps/demo/src",
   "tags": [],
   "targets": {
-
     "build": {
       "executor": "@angular-devkit/build-angular:application",
       "outputs": ["{options.outputPath}"],
@@ -53,7 +52,6 @@
               "with": "apps/demo/src/config/env.dev.ts"
             }
           ]
-
         }
       },
       "defaultConfiguration": "production"
@@ -119,7 +117,6 @@
               "with": "apps/demo/src/config/env.dev.ts"
             }
           ]
-
         }
       },
       "defaultConfiguration": "production"
@@ -132,10 +129,7 @@
     },
     "lint": {
       "executor": "@nx/eslint:lint",
-      "outputs": ["{options.outputFile}"],
-      "options": {
-        "lintFilePatterns": ["apps/demo/**/*.ts", "apps/demo/**/*.html"]
-      }
+      "outputs": ["{options.outputFile}"]
     },
     "test": {
       "executor": "@nx/jest:jest",
