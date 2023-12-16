@@ -6,6 +6,7 @@
     "start": "nx run demo:serve:development",
     "start:webpack": "nx run demo:serve:development-webpack",
     "start:prod": "nx run demo:build:production --parallel && node scripts/express-server.js",
+    "format": "nx format:write",
     "cy:open": "nx run demo-e2e:e2e -- --skipServe=true --watch",
     "test:ct": "nx run demo:component-test -- --watch=true",
     "test:e2e": "nx run demo-e2e:e2e -- --watch=true --port=5200",
@@ -74,4 +75,3 @@
     "typescript": "5.2.2"
   }
 }
-
