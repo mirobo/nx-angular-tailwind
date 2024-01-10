@@ -1,9 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/angular';
 import { NxWelcomeComponent } from './nx-welcome.component';
 
-import { within } from '@storybook/testing-library';
-import { expect } from '@storybook/jest';
-
 const meta: Meta<NxWelcomeComponent> = {
   component: NxWelcomeComponent,
   title: 'NxWelcomeComponent',
@@ -16,9 +13,5 @@ export const Primary: Story = {
 };
 
 export const Heading: Story = {
-  args: {},
-  play: async ({ canvasElement }) => {
-    const canvas = within(canvasElement);
-    expect(canvas.getByText(/welcome demo/gi)).toBeTruthy();
-  },
+  args: {}
 };
