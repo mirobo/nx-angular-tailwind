@@ -4,6 +4,7 @@
   "license": "MIT",
   "scripts": {
     "start": "concurrently --kill-others \"npm run start:esbuild\" \"npm run start:webpack\"",
+    "start:incremental": "nx run demo:serve-static --port 4202",
     "start:esbuild": "nx run demo:serve:development --open --port 4201",
     "start:webpack": "nx run demo:serve:development-webpack --open --port 4200",
     "start:storybook": "nx run demo:storybook",
