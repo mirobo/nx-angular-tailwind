@@ -9,6 +9,7 @@
     "start:webpack": "nx run demo:serve:development-webpack --open --port 4200",
     "start:storybook": "nx run demo:storybook",
     "start:prod": "nx run demo:build:production --parallel && node scripts/express-server.js",
+    "show-affected": "nx show projects --affected",
     "show-affected:untracked": "nx show projects --affected --untracked=true",
     "show-affected:uncommitted": "nx show projects --affected --uncommitted=true",
     "lint:app:affected": "nx affected --target=lint --exclude='*,!tag:app'",
