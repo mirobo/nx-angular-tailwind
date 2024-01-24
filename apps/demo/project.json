@@ -4,7 +4,7 @@
   "projectType": "application",
   "prefix": "demo",
   "sourceRoot": "apps/demo/src",
-  "tags": [],
+  "tags": ["app"],
   "targets": {
     "build": {
       "executor": "@nx/angular:application",

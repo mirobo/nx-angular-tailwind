@@ -1,7 +1,7 @@
 {
   "root": true,
   "ignorePatterns": ["**/*"],
-  "plugins": ["@nx"],
+  "plugins": ["@nx", "cypress"],
   "overrides": [
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
@@ -36,6 +36,11 @@
       "env": {
         "jest": true
       },
+      "rules": {}
+    },
+    {
+      "files": ["*.cy.ts"],
+      "extends": ["plugin:@nx/typescript","plugin:cypress/recommended"],
       "rules": {}
     }
   ]

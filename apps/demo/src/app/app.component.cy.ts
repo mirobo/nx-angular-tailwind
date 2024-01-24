@@ -28,6 +28,7 @@ describe(NxWelcomeComponent.name, () => {
   });
 
   it('renders', () => {
+    cy.wait(100);
     cy.mount(NxWelcomeComponent);
   });
 });
